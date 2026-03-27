@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BattleArena | Comunitate</title>
+		<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="shell">
+				<a class="brand" href="index.html">
+					<span class="brand-mark">BATTLEARENA</span>
+					<span class="brand-tag">portal despre jocuri video</span>
+				</a>
+				<nav class="site-nav" aria-label="Navigație principală">
+					<a href="index.html">Jocuri Video</a>
+					<a href="event.html">Event</a>
+					<a href="ghid.html">Ghid</a>
+					<a href="platforme-jocuri.html">Platforme Jocuri</a>
+					<a href="jocuri.html">Jocuri</a>
+					<a class="current" href="comunitate.html">Comunitate</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="page-banner banner-community">
+				<div class="shell banner-copy">
+					<span class="eyebrow">Comunitate</span>
+					<h1>Review-uri scurte, directe și ușor de parcurs.</h1>
+					<p>Pagina comunității folosește un slider realizat în vanilla JS pentru a evidenția opinii diferite despre jocuri populare. Astfel, secțiunea are și interactivitate, nu doar conținut static.</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="shell">
+					<div class="section-heading">
+						<span class="eyebrow">Review slider</span>
+						<h2>Vocea comunității</h2>
+						<p class="section-intro">Fiecare review este scurt, clar și pune accent pe experiența personală a jucătorului, nu doar pe nota finală.</p>
+					</div>
+
+					<div class="panel review-slider" data-review-slider data-reveal>
+						<div class="review-track">
+							<article class="review-card" data-slide>
+								<header>
+									<div>
+										<span class="eyebrow">Review 01</span>
+										<h3>„Un RPG în care chiar simți că alegerile contează.”</h3>
+									</div>
+									<div class="rating">★★★★★</div>
+								</header>
+								<p>Baldur's Gate 3 mi-a plăcut pentru libertatea enormă din dialoguri și pentru faptul că aproape orice plan nebun poate fi încercat. Nu este un joc grăbit, dar dacă ai răbdare, răsplata este foarte mare.</p>
+								<div class="review-meta">
+									<span>Roxana</span>
+									<span>Preferă RPG-uri</span>
+									<span>Joacă pe PC</span>
+								</div>
+							</article>
+
+							<article class="review-card" data-slide>
+								<header>
+									<div>
+										<span class="eyebrow">Review 02</span>
+										<h3>„Perfect când vrei o sesiune scurtă, dar intensă.”</h3>
+									</div>
+									<div class="rating">★★★★★</div>
+								</header>
+								<p>Hades m-a prins din primele minute pentru că fiecare run spune ceva nou despre lume și personaje. Moartea nu pare pedeapsă, ci parte din progresul jocului, ceea ce îl face foarte ușor de reluat.</p>
+								<div class="review-meta">
+									<span>Matei</span>
+									<span>Preferă action roguelike</span>
+									<span>Joacă pe laptop</span>
+								</div>
+							</article>
+
+							<article class="review-card" data-slide>
+								<header>
+									<div>
+										<span class="eyebrow">Review 03</span>
+										<h3>„Când echipa comunică bine, meciurile se simt excelent.”</h3>
+									</div>
+									<div class="rating">★★★★☆</div>
+								</header>
+								<p>Valorant cere răbdare și un pic de disciplină, dar tocmai asta îl face satisfăcător. Dacă intri cu prieteni și vă organizați utilitarele și pozițiile, meciurile capătă mult mai mult sens.</p>
+								<div class="review-meta">
+									<span>Andrei</span>
+									<span>Preferă shooter competitiv</span>
+									<span>Joacă în echipă</span>
+								</div>
+							</article>
+
+							<article class="review-card" data-slide>
+								<header>
+									<div>
+										<span class="eyebrow">Review 04</span>
+										<h3>„Un joc de curse care încă arată și se simte foarte bine.”</h3>
+									</div>
+									<div class="rating">★★★★☆</div>
+								</header>
+								<p>Forza Horizon 5 funcționează excelent atunci când vrei să te relaxezi și să conduci fără prea multe bariere. Harta este vie, mașinile au personalitate, iar ritmul general este foarte prietenos.</p>
+								<div class="review-meta">
+									<span>Denis</span>
+									<span>Preferă racing</span>
+									<span>Joacă pe controller</span>
+								</div>
+							</article>
+
+							<article class="review-card" data-slide>
+								<header>
+									<div>
+										<span class="eyebrow">Review 05</span>
+										<h3>„Night City are încă o atmosferă pe care puține jocuri o ating.”</h3>
+									</div>
+									<div class="rating">★★★★★</div>
+								</header>
+								<p>Cyberpunk 2077 mi-a rămas în minte prin stilul vizual și felul în care orașul pare mereu viu. Chiar și când nu faci o misiune mare, simpla plimbare prin zonele diferite spune ceva despre lume.</p>
+								<div class="review-meta">
+									<span>Bianca</span>
+									<span>Preferă lumi deschise</span>
+									<span>Joacă pe PC și consolă</span>
+								</div>
+							</article>
+						</div>
+
+						<div class="slider-controls">
+							<div class="slider-buttons">
+								<button class="icon-button" type="button" data-prev aria-label="Review anterior">←</button>
+								<button class="icon-button" type="button" data-next aria-label="Review următor">→</button>
+							</div>
+							<div class="slider-dots" data-dots></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="shell">
+					<div class="card-grid three-up">
+						<article class="panel" data-reveal>
+							<span class="eyebrow">Ce apreciază oamenii</span>
+							<h3>Review-uri personale</h3>
+							<p>Review-urile sunt scrise ca reacții directe, nu ca articole lungi. Asta le face ușor de citit și mai apropiate de experiența reală.</p>
+						</article>
+						<article class="panel" data-reveal>
+							<span class="eyebrow">Ce contează</span>
+							<h3>Ritm, atmosferă, control</h3>
+							<p>Majoritatea părerilor se leagă de cum se simte jocul, nu doar de notă. Pentru mulți jucători, senzația în gameplay cântărește mai mult.</p>
+						</article>
+						<article class="panel" data-reveal>
+							<span class="eyebrow">Legături utile</span>
+							<h3>Comunitate conectată cu restul site-ului</h3>
+							<p>După ce citești review-urile, poți merge direct spre paginile de jocuri, ghiduri sau eventuri fără să ieși din flux.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="shell footer-grid">
+				<div class="footer-copy">
+					<strong class="brand-mark">BATTLEARENA</strong>
+					<p>Review-uri ale comunității, afișate într-un slider construit în vanilla JS.</p>
+				</div>
+				<div class="footer-links">
+					<a href="index.html">Jocuri Video</a>
+					<a href="event.html">Event</a>
+					<a href="ghid.html">Ghid</a>
+					<a href="platforme-jocuri.html">Platforme Jocuri</a>
+					<a href="jocuri.html">Jocuri</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusGaming | Video Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Nexus<span>Gaming</span></a>
+      <div class="hamburger" aria-label="Open menu" role="button" tabindex="0">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html" class="active">Video Games</a></li>
+        <li><a href="events.html">Event</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 4rem;">
+    <h1 class="section-title">Popular Titles</h1>
+
+    <div class="filter-menu">
+      <button class="btn active filter-btn" data-category="all">All</button>
+      <button class="btn filter-btn" data-category="rpg">RPG</button>
+      <button class="btn filter-btn" data-category="fps">FPS</button>
+      <button class="btn filter-btn" data-category="racing">Racing</button>
+    </div>
+
+    <div class="grid">
+      <div class="card game-card-item" data-category="rpg">
+        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80" alt="RPG">
+        <div class="card-content">
+          <h3 class="card-title">Cyber Uprising</h3>
+          <div class="card-meta"><span class="badge">RPG</span> <span>Rating: 9.2/10</span></div>
+          <p>Deep narrative and open-world exploration in a dystopian future.</p>
+        </div>
+      </div>
+
+      <div class="card game-card-item" data-category="fps">
+        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80" alt="FPS">
+        <div class="card-content">
+          <h3 class="card-title">Galactic Vanguard</h3>
+          <div class="card-meta"><span class="badge">FPS</span> <span>Rating: 8.8/10</span></div>
+          <p>Competitive multiplayer space warfare with intense gunplay.</p>
+        </div>
+      </div>
+
+      <div class="card game-card-item" data-category="rpg">
+        <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=600&q=80" alt="RPG">
+        <div class="card-content">
+          <h3 class="card-title">Elden Legacy</h3>
+          <div class="card-meta"><span class="badge">RPG</span> <span>Rating: 9.8/10</span></div>
+          <p>A masterpiece of dark fantasy map design and boss encounters.</p>
+        </div>
+      </div>
+
+      <div class="card game-card-item" data-category="racing">
+        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=600&q=80" alt="Racing">
+        <div class="card-content">
+          <h3 class="card-title">Neon Drift</h3>
+          <div class="card-meta"><span class="badge">Racing</span> <span>Rating: 8.5/10</span></div>
+          <p>High-speed street racing through synthwave-inspired cityscapes.</p>
+        </div>
+      </div>
+
+      <div class="card game-card-item" data-category="fps">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="FPS">
+        <div class="card-content">
+          <h3 class="card-title">Tactical Ops: Zero</h3>
+          <div class="card-meta"><span class="badge">FPS</span> <span>Rating: 9.0/10</span></div>
+          <p>Squad-based tactical shooter where communication is survival.</p>
+        </div>
+      </div>
+
+      <div class="card game-card-item" data-category="rpg">
+        <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=600&q=80" alt="RPG">
+        <div class="card-content">
+          <h3 class="card-title">Chronicles of Aethel</h3>
+          <div class="card-meta"><span class="badge">RPG</span> <span>Rating: 8.9/10</span></div>
+          <p>Classic turn-based RPG mechanics mixed with stunning 3D graphics.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-bottom" style="margin-top: 0; padding-top: 0; border: none;">
+      &copy; 2023 NexusGaming. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
