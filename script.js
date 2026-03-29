@@ -1,10 +1,66 @@
+const navLinks = [
+	{ id: "home", label: "Jocuri Video", href: "index.html" },
+	{ id: "event", label: "Event", href: "event.html" },
+	{ id: "ghid", label: "Ghid", href: "ghid.html" },
+	{ id: "platforme", label: "Platforme Jocuri", href: "platforme-jocuri.html" },
+	{ id: "jocuri", label: "Jocuri", href: "jocuri.html" },
+	{ id: "comunitate", label: "Comunitate", href: "comunitate.html" }
+];
+
 document.addEventListener("DOMContentLoaded", () => {
+	renderLayout();
 	document.body.classList.add("js-ready");
 
 	initSmoothScroll();
 	initRevealOnScroll();
 	initReviewSlider();
 });
+
+function renderLayout() {
+	const currentPage = document.body.dataset.page || "home";
+	const main = document.querySelector("main");
+
+	const header = document.createElement("header");
+	header.className = "site-header";
+	header.innerHTML = `
+		<div class="shell">
+			<a class="brand" href="index.html">
+				<span class="brand-mark">BATTLEARENA</span>
+				<span class="brand-tag">portal despre jocuri video</span>
+			</a>
+			<nav class="site-nav" aria-label="Navigație principală">
+				${navLinks
+					.map(
+						({ id, label, href }) =>
+							`<a ${id === currentPage ? 'class="current"' : ""} href="${href}">${label}</a>`
+					)
+					.join("")}
+			</nav>
+		</div>
+	`;
+
+	if (main) {
+		document.body.insertBefore(header, main);
+	} else {
+		document.body.prepend(header);
+	}
+
+	const footer = document.createElement("footer");
+	footer.className = "site-footer";
+	footer.innerHTML = `
+		<div class="shell footer-grid">
+			<div class="footer-copy">
+				<strong class="brand-mark">BATTLEARENA</strong>
+				<p>Calendar scurt cu eventuri și pagini dedicate de detaliu.</p>
+			</div>
+			<div class="footer-links">
+				${navLinks.map(({ label, href }) => `<a href="${href}">${label}</a>`).join("")}
+			</div>
+		</div>
+	`;
+
+	document.body.append(footer);
+}
 
 function initSmoothScroll() {
 	const links = document.querySelectorAll('a[href^="#"]');
