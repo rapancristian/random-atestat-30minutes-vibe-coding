@@ -5,147 +5,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BattleArena | Platforme Jocuri</title>
 		<link rel="icon" href="favicon.svg" type="image/svg+xml">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="tailwind.css">
 		<link rel="stylesheet" href="style.css">
 		<script defer src="script.js"></script>
 	</head>
-	<body class="page-platforme">
-		<header class="site-header">
-			<div class="shell">
-				<a class="brand" href="index.html">
-					<span class="brand-mark">BATTLEARENA</span>
-					<span class="brand-tag">portal despre jocuri video</span>
-				</a>
-				<nav class="site-nav" aria-label="Navigație principală">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
+	<body class="min-h-screen font-body text-brand-text leading-[1.7] [background:radial-gradient(circle_at_top_left,rgba(64,207,255,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,111,216,0.16),transparent_24%),radial-gradient(circle_at_bottom_center,rgba(118,230,255,0.10),transparent_30%),linear-gradient(160deg,#02040a_0%,#040813_42%,#070d1c_100%)]">
+		<div aria-hidden="true" class="pointer-events-none fixed inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] [background-size:40px_40px] [mask-image:radial-gradient(circle_at_center,#000_40%,transparent_92%)]"></div>
+		<header class="site-header sticky top-0 z-50 border-b border-cyan-200/10 bg-[#040813]/75 backdrop-blur-xl">
+			<div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-6">
+				<a class="grid gap-1" href="index.html"><span class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</span><span class="text-[0.72rem] uppercase tracking-[0.16em] text-brand-muted">portal despre jocuri video</span></a>
+				<nav class="flex w-full gap-3 overflow-x-auto pb-1 lg:w-auto lg:flex-wrap lg:justify-end lg:overflow-visible lg:pb-0" aria-label="Navigație principală">
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="index.html">Jocuri Video</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="event.html">Event</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="ghid.html">Ghid</a>
+					<a class="whitespace-nowrap rounded-full border border-cyan-200/20 bg-white/5 px-4 py-3 text-[0.95rem] text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="jocuri.html">Jocuri</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="comunitate.html">Comunitate</a>
 				</nav>
 			</div>
 		</header>
-
-		<main>
-			<section class="page-banner banner-platforms">
-				<div class="shell banner-copy">
-					<span class="eyebrow">Platforme jocuri</span>
-					<h1>Două platforme mari, cu jocuri populare și prețuri orientative.</h1>
-					<p>Steam și Epic Games sunt punctele de pornire pentru mulți jucători de PC. Mai jos ai o imagine scurtă asupra diferențelor și câteva titluri populare cu prețuri aproximative.</p>
+		<main class="relative z-10">
+			<section class="relative overflow-hidden px-4 py-18 lg:px-6 lg:py-20">
+				<div aria-hidden="true" class="absolute inset-0 opacity-95"><div class="absolute left-[14%] top-[24%] h-56 w-56 rounded-full bg-[rgba(118,230,255,0.22)] blur-3xl"></div><div class="absolute right-[16%] top-[22%] h-64 w-64 rounded-full bg-[rgba(255,111,216,0.18)] blur-3xl"></div></div>
+				<div class="relative z-10 mx-auto grid max-w-[1180px] gap-4">
+					<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Platforme jocuri</span>
+					<h1 class="max-w-[820px] font-display text-[clamp(2.3rem,12vw,5.25rem)] leading-none">Două platforme mari, cu jocuri populare și prețuri orientative.</h1>
+					<p class="max-w-[820px] text-brand-muted">Steam și Epic Games sunt punctele de pornire pentru mulți jucători de PC. Mai jos ai o imagine scurtă asupra diferențelor și câteva titluri populare cu prețuri aproximative.</p>
 				</div>
 			</section>
-
-			<section class="section">
-				<div class="shell content-stack">
-					<article class="panel platform-card" data-reveal>
-						<div class="platform-copy">
-							<span class="eyebrow">Platforma 01</span>
-							<h2>Steam</h2>
-							<p>Steam rămâne una dintre cele mai complete platforme pentru PC datorită bibliotecii mari, review-urilor venite direct de la utilizatori, reducerilor sezoniere și integrării bune cu workshop-uri și realizări.</p>
-							<div class="info-stack">
-								<div class="mini-card">
-									<strong>Punct forte</strong>
-									<p>Bibliotecă foarte mare și promoții frecvente.</p>
-								</div>
-								<div class="mini-card">
-									<strong>Bun pentru</strong>
-									<p>Jucători care vor varietate și acces la jocuri AAA, indie și multiplayer.</p>
-								</div>
+			<section class="px-4 py-16 lg:px-6 lg:py-20">
+				<div class="mx-auto grid max-w-[1180px] gap-6">
+					<article class="panel grid gap-6 rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel lg:grid-cols-[0.95fr_1.05fr]" data-reveal>
+						<div class="grid gap-4">
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Platforma 01</span>
+							<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Steam</h2>
+							<p class="text-brand-muted">Steam rămâne una dintre cele mai complete platforme pentru PC datorită bibliotecii mari, review-urilor venite direct de la utilizatori, reducerilor sezoniere și integrării bune cu workshop-uri și realizări.</p>
+							<div class="grid gap-4">
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">Punct forte</strong><p class="mt-1 text-brand-muted">Bibliotecă foarte mare și promoții frecvente.</p></div>
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">Bun pentru</strong><p class="mt-1 text-brand-muted">Jucători care vor varietate și acces la jocuri AAA, indie și multiplayer.</p></div>
 							</div>
 						</div>
-
-						<div class="price-list">
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Baldur's Gate 3</strong>
-									<span class="price-badge">aprox. 239 lei</span>
-								</div>
-								<p>RPG tactic cu party management, dialoguri foarte bune și multă libertate în decizii.</p>
-							</div>
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Helldivers 2</strong>
-									<span class="price-badge">aprox. 199 lei</span>
-								</div>
-								<p>Shooter co-op intens, cu misiuni dinamice și accent puternic pe coordonare în echipă.</p>
-							</div>
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Counter-Strike 2</strong>
-									<span class="price-badge">gratuit</span>
-								</div>
-								<p>Unul dintre cele mai cunoscute jocuri competitive pentru jucătorii care preferă meciuri rapide și precise.</p>
-							</div>
+						<div class="grid gap-4">
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Baldur's Gate 3</strong><span class="font-bold text-brand-accent-warm">aprox. 239 lei</span></div><p class="mt-2 text-brand-muted">RPG tactic cu party management, dialoguri foarte bune și multă libertate în decizii.</p></div>
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Helldivers 2</strong><span class="font-bold text-brand-accent-warm">aprox. 199 lei</span></div><p class="mt-2 text-brand-muted">Shooter co-op intens, cu misiuni dinamice și accent puternic pe coordonare în echipă.</p></div>
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Counter-Strike 2</strong><span class="font-bold text-brand-accent-warm">gratuit</span></div><p class="mt-2 text-brand-muted">Unul dintre cele mai cunoscute jocuri competitive pentru jucătorii care preferă meciuri rapide și precise.</p></div>
 						</div>
 					</article>
-
-					<article class="panel platform-card" data-reveal>
-						<div class="platform-copy">
-							<span class="eyebrow">Platforma 02</span>
-							<h2>Epic Games</h2>
-							<p>Epic Games este cunoscută pentru ofertele periodice, jocurile gratuite acordate constant și pentru titluri exclusive sau foarte populare în zona de acțiune și multiplayer.</p>
-							<div class="info-stack">
-								<div class="mini-card">
-									<strong>Punct forte</strong>
-									<p>Campanii promoționale bune și selecții interesante pentru utilizatorii noi.</p>
-								</div>
-								<div class="mini-card">
-									<strong>Bun pentru</strong>
-									<p>Jucători care urmăresc oferte, jocuri live service și lansări distribuite exclusiv pe Epic.</p>
-								</div>
+					<article class="panel grid gap-6 rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel lg:grid-cols-[0.95fr_1.05fr]" data-reveal>
+						<div class="grid gap-4">
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Platforma 02</span>
+							<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Epic Games</h2>
+							<p class="text-brand-muted">Epic Games este cunoscută pentru ofertele periodice, jocurile gratuite acordate constant și pentru titluri exclusive sau foarte populare în zona de acțiune și multiplayer.</p>
+							<div class="grid gap-4">
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">Punct forte</strong><p class="mt-1 text-brand-muted">Campanii promoționale bune și selecții interesante pentru utilizatorii noi.</p></div>
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">Bun pentru</strong><p class="mt-1 text-brand-muted">Jucători care urmăresc oferte, jocuri live service și lansări distribuite exclusiv pe Epic.</p></div>
 							</div>
 						</div>
-
-						<div class="price-list">
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Alan Wake 2</strong>
-									<span class="price-badge">aprox. 269 lei</span>
-								</div>
-								<p>Acțiune narativă cu atmosferă puternică, ritm cinematic și investigație bine construită.</p>
-							</div>
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Fortnite</strong>
-									<span class="price-badge">gratuit</span>
-								</div>
-								<p>Battle royale și experiență socială în continuă schimbare, cu update-uri frecvente și evenimente tematice.</p>
-							</div>
-							<div class="price-item">
-								<div class="price-top">
-									<strong>Dead Island 2</strong>
-									<span class="price-badge">aprox. 179 lei</span>
-								</div>
-								<p>Acțiune first-person cu accent pe lupte spectaculoase, progres clar și co-op distractiv.</p>
-							</div>
+						<div class="grid gap-4">
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Alan Wake 2</strong><span class="font-bold text-brand-accent-warm">aprox. 269 lei</span></div><p class="mt-2 text-brand-muted">Acțiune narativă cu atmosferă puternică, ritm cinematic și investigație bine construită.</p></div>
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Fortnite</strong><span class="font-bold text-brand-accent-warm">gratuit</span></div><p class="mt-2 text-brand-muted">Battle royale și experiență socială în continuă schimbare, cu update-uri frecvente și evenimente tematice.</p></div>
+							<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><div class="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between"><strong>Dead Island 2</strong><span class="font-bold text-brand-accent-warm">aprox. 179 lei</span></div><p class="mt-2 text-brand-muted">Acțiune first-person cu accent pe lupte spectaculoase, progres clar și co-op distractiv.</p></div>
 						</div>
 					</article>
-
-					<article class="panel panel-stack" data-reveal>
-						<span class="eyebrow">Notă</span>
-						<h3>Prețurile sunt orientative</h3>
-						<p>Valorile afișate sunt aproximative și pot varia în funcție de promoții, ediții speciale sau regiune. Pagina este construită ca referință vizuală și informativă pentru proiect.</p>
+					<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+						<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Notă</span>
+						<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Prețurile sunt orientative</h3>
+						<p class="mt-4 text-brand-muted">Valorile afișate sunt aproximative și pot varia în funcție de promoții, ediții speciale sau regiune. Pagina este construită ca referință vizuală și informativă pentru proiect.</p>
 					</article>
 				</div>
 			</section>
 		</main>
-
-		<footer class="site-footer">
-			<div class="shell footer-grid">
-				<div class="footer-copy">
-					<strong class="brand-mark">BATTLEARENA</strong>
-					<p>Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p>
-				</div>
-				<nav class="footer-links" aria-label="Navigație secundară">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
+		<footer class="relative z-10 border-t border-cyan-200/10 bg-[#03060e]/60 py-10">
+			<div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 lg:flex-row lg:items-center lg:justify-between lg:px-6">
+				<div class="grid gap-1"><strong class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</strong><p class="text-brand-muted">Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p></div>
+				<nav class="flex flex-wrap gap-4 text-brand-muted" aria-label="Navigație secundară">
+					<a class="transition hover:text-brand-text" href="index.html">Jocuri Video</a><a class="transition hover:text-brand-text" href="event.html">Event</a><a class="transition hover:text-brand-text" href="ghid.html">Ghid</a><a class="transition hover:text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a><a class="transition hover:text-brand-text" href="jocuri.html">Jocuri</a><a class="transition hover:text-brand-text" href="comunitate.html">Comunitate</a>
 				</nav>
 			</div>
 		</footer>

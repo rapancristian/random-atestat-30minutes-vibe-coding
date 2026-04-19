@@ -5,239 +5,222 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BattleArena | Jocuri Video</title>
 		<link rel="icon" href="favicon.svg" type="image/svg+xml">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="tailwind.css">
 		<link rel="stylesheet" href="style.css">
 		<script defer src="script.js"></script>
 	</head>
-	<body class="page-home">
-		<header class="site-header">
-			<div class="shell">
-				<a class="brand" href="index.html">
-					<span class="brand-mark">BATTLEARENA</span>
-					<span class="brand-tag">portal despre jocuri video</span>
+	<body class="min-h-screen font-body text-brand-text leading-[1.7] [background:radial-gradient(circle_at_top_left,rgba(64,207,255,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,111,216,0.16),transparent_24%),radial-gradient(circle_at_bottom_center,rgba(118,230,255,0.10),transparent_30%),linear-gradient(160deg,#02040a_0%,#040813_42%,#070d1c_100%)]">
+		<div aria-hidden="true" class="pointer-events-none fixed inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] [background-size:40px_40px] [mask-image:radial-gradient(circle_at_center,#000_40%,transparent_92%)]"></div>
+
+		<header class="site-header sticky top-0 z-50 border-b border-cyan-200/10 bg-[#040813]/75 backdrop-blur-xl">
+			<div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-6">
+				<a class="grid gap-1" href="index.html">
+					<span class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</span>
+					<span class="text-[0.72rem] uppercase tracking-[0.16em] text-brand-muted">portal despre jocuri video</span>
 				</a>
-				<nav class="site-nav" aria-label="Navigație principală">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
+				<nav class="flex w-full gap-3 overflow-x-auto pb-1 lg:w-auto lg:flex-wrap lg:justify-end lg:overflow-visible lg:pb-0" aria-label="Navigație principală">
+					<a class="whitespace-nowrap rounded-full border border-cyan-200/20 bg-white/5 px-4 py-3 text-[0.95rem] text-brand-text transition hover:border-cyan-200/20 hover:bg-white/5" href="index.html">Jocuri Video</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="event.html">Event</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="ghid.html">Ghid</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="jocuri.html">Jocuri</a>
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="comunitate.html">Comunitate</a>
 				</nav>
 			</div>
 		</header>
 
-		<main>
-			<section class="hero-banner banner-home">
-				<div class="shell hero-grid">
-					<div class="hero-visual" aria-hidden="true">
-						<div class="orb orb-one"></div>
-						<div class="orb orb-two"></div>
-						<div class="orb orb-three"></div>
+		<main class="relative z-10">
+			<section class="overflow-hidden px-4 pb-12 pt-10 lg:px-6">
+				<div class="mx-auto grid max-w-[1180px] gap-8 lg:min-h-[calc(100vh-120px)] lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+					<div class="relative grid gap-4 overflow-hidden rounded-[32px] border border-cyan-200/15 bg-[linear-gradient(145deg,rgba(6,12,29,0.98),rgba(16,24,51,0.92))] p-4 shadow-panel md:min-h-[560px] md:p-0">
+						<div class="absolute inset-5 hidden rounded-[24px] border border-white/5 md:block"></div>
+						<div class="absolute left-[8%] top-[9%] hidden h-36 w-36 rounded-full bg-[rgba(118,230,255,0.32)] blur-xl md:block md:animate-[float_7.6s_ease-in-out_infinite]"></div>
+						<div class="absolute bottom-[14%] right-[12%] hidden h-[120px] w-[120px] rounded-full bg-[rgba(255,111,216,0.24)] blur-xl md:block md:animate-[float_7.6s_ease-in-out_infinite] md:[animation-delay:-2.4s]"></div>
+						<div class="absolute left-[44%] top-[38%] hidden h-[84px] w-[84px] rounded-full bg-[rgba(255,209,102,0.22)] blur-xl md:block md:animate-[float_7.6s_ease-in-out_infinite] md:[animation-delay:-4.2s]"></div>
 
-						<article class="release-card card-one">
-							<small>Lansare nouă</small>
-							<h3>Cyber Rift: Awakening</h3>
-							<p>Un RPG SF cu oraș vertical, alegeri rapide și misiuni co-op construite pentru sesiuni lungi.</p>
-							<strong>Focus: explorare, poveste și personalizare</strong>
+						<article class="rounded-[24px] border border-cyan-200/15 bg-[rgba(7,12,26,0.82)] p-5 shadow-panel backdrop-blur md:absolute md:left-[7%] md:top-[12%] md:w-[45%] md:max-w-[270px] md:animate-[float_6.6s_ease-in-out_infinite]">
+							<small class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Lansare nouă</small>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Cyber Rift: Awakening</h3>
+							<p class="mt-3 text-brand-muted">Un RPG SF cu oraș vertical, alegeri rapide și misiuni co-op construite pentru sesiuni lungi.</p>
+							<strong class="mt-3 block text-[0.96rem]">Focus: explorare, poveste și personalizare</strong>
 						</article>
 
-						<article class="release-card card-two">
-							<small>Arena competitivă</small>
-							<h3>Nova Strike League</h3>
-							<p>Shooter tactic în runde scurte, cu hărți dense și accent mare pe poziționare și ritm.</p>
-							<strong>Focus: meciuri ranked și controlul hărții</strong>
+						<article class="rounded-[24px] border border-cyan-200/15 bg-[rgba(7,12,26,0.82)] p-5 shadow-panel backdrop-blur md:absolute md:right-[6%] md:top-[40%] md:w-[45%] md:max-w-[270px] md:animate-[float_7.2s_ease-in-out_infinite] md:[animation-delay:-1.6s]">
+							<small class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Arena competitivă</small>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Nova Strike League</h3>
+							<p class="mt-3 text-brand-muted">Shooter tactic în runde scurte, cu hărți dense și accent mare pe poziționare și ritm.</p>
+							<strong class="mt-3 block text-[0.96rem]">Focus: meciuri ranked și controlul hărții</strong>
 						</article>
 
-						<article class="release-card card-three">
-							<small>Co-op narativ</small>
-							<h3>Deep Signal</h3>
-							<p>Suspans, obiective în echipă și un univers subacvatic în care fiecare decizie schimbă traseul.</p>
-							<strong>Focus: coordonare, tensiune și atmosferă</strong>
+						<article class="rounded-[24px] border border-cyan-200/15 bg-[rgba(7,12,26,0.82)] p-5 shadow-panel backdrop-blur md:absolute md:bottom-[9%] md:left-[18%] md:w-[45%] md:max-w-[270px] md:animate-[float_6.9s_ease-in-out_infinite] md:[animation-delay:-3s]">
+							<small class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Co-op narativ</small>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Deep Signal</h3>
+							<p class="mt-3 text-brand-muted">Suspans, obiective în echipă și un univers subacvatic în care fiecare decizie schimbă traseul.</p>
+							<strong class="mt-3 block text-[0.96rem]">Focus: coordonare, tensiune și atmosferă</strong>
 						</article>
 					</div>
 
-					<div class="hero-copy">
-						<span class="eyebrow">Lansări urmărite</span>
-						<h1>Tot ce merită văzut în lumea jocurilor video.</h1>
-						<p class="lead">BattleArena este noua versiune a proiectului, refăcută complet pentru universul gaming. Aici găsești jocuri în focus, ghiduri clare pentru început, platforme populare, eventuri viitoare și opinii reale din comunitate.</p>
+					<div class="grid gap-6">
+						<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Lansări urmărite</span>
+						<h1 class="font-display text-[clamp(2.3rem,12vw,5.25rem)] leading-none">Tot ce merită văzut în lumea jocurilor video.</h1>
+						<p class="max-w-[42rem] text-[1.06rem] text-brand-muted">BattleArena este noua versiune a proiectului, refăcută complet pentru universul gaming. Aici găsești jocuri în focus, ghiduri clare pentru început, platforme populare, eventuri viitoare și opinii reale din comunitate.</p>
 
-						<div class="hero-stats">
-							<div class="stat-card">
-								<span>În focus acum</span>
-								<strong>3 lansări</strong>
+						<div class="grid gap-3 sm:grid-cols-3">
+							<div class="rounded-[20px] border border-brand-border bg-[rgba(11,18,40,0.88)] p-4 shadow-panel">
+								<span class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-muted">În focus acum</span>
+								<strong class="mt-1 block font-display text-[1.4rem]">3 lansări</strong>
 							</div>
-							<div class="stat-card">
-								<span>Calendar activ</span>
-								<strong>3 eventuri</strong>
+							<div class="rounded-[20px] border border-brand-border bg-[rgba(11,18,40,0.88)] p-4 shadow-panel">
+								<span class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-muted">Calendar activ</span>
+								<strong class="mt-1 block font-display text-[1.4rem]">3 eventuri</strong>
 							</div>
-							<div class="stat-card">
-								<span>Selecție curată</span>
-								<strong>6 jocuri</strong>
+							<div class="rounded-[20px] border border-brand-border bg-[rgba(11,18,40,0.88)] p-4 shadow-panel">
+								<span class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-muted">Selecție curată</span>
+								<strong class="mt-1 block font-display text-[1.4rem]">6 jocuri</strong>
 							</div>
 						</div>
 
-						<div class="hero-actions">
-							<a class="button" href="#noutati">Vezi noutățile</a>
-							<a class="button button-secondary" href="event.html">Intră în Event</a>
+						<div class="flex flex-wrap gap-4">
+							<a class="inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#ff6fd8,#8b77ff)] px-5 py-4 text-[0.96rem] font-bold text-[#080a14] shadow-[0_16px_34px_rgba(255,111,216,0.22)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(118,230,255,0.2)]" href="#noutati">Vezi noutățile</a>
+							<a class="inline-flex items-center justify-center rounded-full border border-brand-border bg-white/5 px-5 py-4 text-[0.96rem] font-bold transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(118,230,255,0.2)]" href="event.html">Intră în Event</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="section" id="noutati">
-				<div class="shell content-stack">
-					<div class="section-heading">
-						<span class="eyebrow">Noutăți</span>
-						<h2>Jocuri care atrag acum toată atenția</h2>
-						<p class="section-intro">Am ales trei direcții diferite ca să existe varietate: un RPG futuristic, un shooter competitiv și o aventură co-op cu atmosferă puternică.</p>
+			<section class="px-4 py-16 lg:px-6 lg:py-20" id="noutati">
+				<div class="mx-auto grid max-w-[1180px] gap-5">
+					<div class="grid max-w-[760px] gap-3">
+						<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Noutăți</span>
+						<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Jocuri care atrag acum toată atenția</h2>
+						<p class="text-brand-muted">Am ales trei direcții diferite ca să existe varietate: un RPG futuristic, un shooter competitiv și o aventură co-op cu atmosferă puternică.</p>
 					</div>
 
-					<div class="card-grid three-up">
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Poveste și progres</span>
-							<h3>Cyber Rift: Awakening</h3>
-							<div class="tag-list">
-								<span class="tag">RPG</span>
-								<span class="tag">PC</span>
-								<span class="tag">Explorare</span>
+					<div class="grid gap-5 lg:grid-cols-3">
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Poveste și progres</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Cyber Rift: Awakening</h3>
+							<div class="mt-4 flex flex-wrap gap-2">
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">RPG</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">PC</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Explorare</span>
 							</div>
-							<p>Orașe luminate cu neon, ramificații narative și build-uri care pot schimba total felul în care lupți și explorezi.</p>
-							<div class="panel-footer">
+							<p class="mt-4 text-brand-muted">Orașe luminate cu neon, ramificații narative și build-uri care pot schimba total felul în care lupți și explorezi.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 								<strong>Ideal pentru seri lungi de campanie</strong>
-								<a class="link-line" href="jocuri.html">Vezi mai multe jocuri</a>
+								<a class="inline-flex items-center gap-2 font-bold" href="jocuri.html"><span>Vezi mai multe jocuri</span><span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Competiție</span>
-							<h3>Nova Strike League</h3>
-							<div class="tag-list">
-								<span class="tag">Shooter</span>
-								<span class="tag">5v5</span>
-								<span class="tag">Ranked</span>
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Competiție</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Nova Strike League</h3>
+							<div class="mt-4 flex flex-wrap gap-2">
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Shooter</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">5v5</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Ranked</span>
 							</div>
-							<p>Hărți compacte, un meta care se schimbă repede și o economie de echipă care obligă la decizii bune rundă de rundă.</p>
-							<div class="panel-footer">
+							<p class="mt-4 text-brand-muted">Hărți compacte, un meta care se schimbă repede și o economie de echipă care obligă la decizii bune rundă de rundă.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 								<strong>Ideal pentru reflexe și tactică</strong>
-								<a class="link-line" href="ghid.html">Intră în Ghid</a>
+								<a class="inline-flex items-center gap-2 font-bold" href="ghid.html"><span>Intră în Ghid</span><span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Co-op atmosferic</span>
-							<h3>Deep Signal</h3>
-							<div class="tag-list">
-								<span class="tag">Co-op</span>
-								<span class="tag">Poveste</span>
-								<span class="tag">Mystery</span>
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Co-op atmosferic</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Deep Signal</h3>
+							<div class="mt-4 flex flex-wrap gap-2">
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Co-op</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Poveste</span>
+								<span class="rounded-full border border-cyan-200/15 bg-cyan-200/10 px-3 py-1.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-brand-accent">Mystery</span>
 							</div>
-							<p>Două roluri complementare, puzzle-uri de sincronizare și un ritm lent care construiește tensiune foarte eficient.</p>
-							<div class="panel-footer">
+							<p class="mt-4 text-brand-muted">Două roluri complementare, puzzle-uri de sincronizare și un ritm lent care construiește tensiune foarte eficient.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 								<strong>Ideal pentru echipe de doi jucători</strong>
-								<a class="link-line" href="comunitate.html">Citește review-uri</a>
+								<a class="inline-flex items-center gap-2 font-bold" href="comunitate.html"><span>Citește review-uri</span><span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 					</div>
 				</div>
 			</section>
 
-			<section class="section">
-				<div class="shell split-layout">
-					<article class="panel panel-stack" data-reveal>
-						<span class="eyebrow">Pornire rapidă</span>
-						<h2>Ghiduri clare, fără pași inutili</h2>
-						<p>Dacă vrei să intri mai repede în ritmul unui joc nou, pagina de ghid îți oferă exemple concrete pentru început, strategie și gameplay. Totul este scris simplu, pe scurt și într-o ordine ușor de urmărit.</p>
-
-						<ul class="tip-list">
-							<li>Setări inițiale pentru control și ritm mai bun.</li>
-							<li>Strategii de poziționare, rotație și gestionare a resurselor.</li>
-							<li>Exemple de gameplay pe care le poți aplica imediat.</li>
-						</ul>
-
-						<a class="button" href="ghid.html">Deschide pagina de ghid</a>
-					</article>
-
-					<article class="panel panel-stack" data-reveal>
-						<span class="eyebrow">Calendar scurt</span>
-						<h2>Ce urmează în perioada următoare</h2>
-						<div class="timeline-list">
-							<div class="timeline-item">
-								<strong>18 aprilie 2026</strong>
-								<p>Arena LAN Open București aduce turnee rapide, dueluri pe scenă și zone demo.</p>
-							</div>
-							<div class="timeline-item">
-								<strong>2 mai 2026</strong>
-								<p>Indie Launch Lab pune în centru studiouri mici, idei noi și prezentări live.</p>
-							</div>
-							<div class="timeline-item">
-								<strong>16 mai 2026</strong>
-								<p>Noaptea de Speedrun promite rute optime, comentariu live și provocări între creatori.</p>
-							</div>
+			<section class="px-4 py-16 lg:px-6 lg:py-20">
+				<div class="mx-auto grid max-w-[1180px] gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+					<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+						<div class="grid gap-4">
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Pornire rapidă</span>
+							<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Ghiduri clare, fără pași inutili</h2>
+							<p class="text-brand-muted">Dacă vrei să intri mai repede în ritmul unui joc nou, pagina de ghid îți oferă exemple concrete pentru început, strategie și gameplay. Totul este scris simplu, pe scurt și într-o ordine ușor de urmărit.</p>
+							<ul class="grid gap-3">
+								<li class="relative pl-5 text-brand-muted before:absolute before:left-0 before:top-[0.7rem] before:h-[0.55rem] before:w-[0.55rem] before:rounded-full before:bg-brand-accent before:shadow-[0_0_14px_rgba(118,230,255,0.48)]">Setări inițiale pentru control și ritm mai bun.</li>
+								<li class="relative pl-5 text-brand-muted before:absolute before:left-0 before:top-[0.7rem] before:h-[0.55rem] before:w-[0.55rem] before:rounded-full before:bg-brand-accent before:shadow-[0_0_14px_rgba(118,230,255,0.48)]">Strategii de poziționare, rotație și gestionare a resurselor.</li>
+								<li class="relative pl-5 text-brand-muted before:absolute before:left-0 before:top-[0.7rem] before:h-[0.55rem] before:w-[0.55rem] before:rounded-full before:bg-brand-accent before:shadow-[0_0_14px_rgba(118,230,255,0.48)]">Exemple de gameplay pe care le poți aplica imediat.</li>
+							</ul>
+							<a class="inline-flex w-fit items-center justify-center rounded-full bg-[linear-gradient(135deg,#ff6fd8,#8b77ff)] px-5 py-4 text-[0.96rem] font-bold text-[#080a14] shadow-[0_16px_34px_rgba(255,111,216,0.22)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(118,230,255,0.2)]" href="ghid.html">Deschide pagina de ghid</a>
 						</div>
-						<a class="button button-secondary" href="event.html">Vezi toate eventurile</a>
+					</article>
+
+					<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+						<div class="grid gap-4">
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Calendar scurt</span>
+							<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Ce urmează în perioada următoare</h2>
+							<div class="grid gap-4">
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">18 aprilie 2026</strong><p class="mt-1 text-brand-muted">Arena LAN Open București aduce turnee rapide, dueluri pe scenă și zone demo.</p></div>
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">2 mai 2026</strong><p class="mt-1 text-brand-muted">Indie Launch Lab pune în centru studiouri mici, idei noi și prezentări live.</p></div>
+								<div class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block">16 mai 2026</strong><p class="mt-1 text-brand-muted">Noaptea de Speedrun promite rute optime, comentariu live și provocări între creatori.</p></div>
+							</div>
+							<a class="inline-flex w-fit items-center justify-center rounded-full border border-brand-border bg-white/5 px-5 py-4 text-[0.96rem] font-bold transition hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(118,230,255,0.2)]" href="event.html">Vezi toate eventurile</a>
+						</div>
 					</article>
 				</div>
 			</section>
 
-			<section class="section">
-				<div class="shell content-stack">
-					<div class="section-heading">
-						<span class="eyebrow">Acces rapid</span>
-						<h2>Tot site-ul este construit acum în jurul gaming-ului</h2>
-						<p class="section-intro">Am păstrat ideea de pagini separate, dar fiecare zonă are acum un rol clar: platforme, selecție de jocuri, comunitate și eventuri.</p>
+			<section class="px-4 py-16 lg:px-6 lg:py-20">
+				<div class="mx-auto grid max-w-[1180px] gap-5">
+					<div class="grid max-w-[760px] gap-3">
+						<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Acces rapid</span>
+						<h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Tot site-ul este construit acum în jurul gaming-ului</h2>
+						<p class="text-brand-muted">Am păstrat ideea de pagini separate, dar fiecare zonă are acum un rol clar: platforme, selecție de jocuri, comunitate și eventuri.</p>
 					</div>
-
-					<div class="card-grid three-up">
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Platforme</span>
-							<h3>Steam și Epic Games</h3>
-							<p>Compari rapid două platforme mari, vezi titluri populare și prețuri orientative pentru jocuri căutate.</p>
-							<div class="panel-footer">
-								<strong>Practic pentru alegerea magazinului</strong>
-								<a class="link-line" href="platforme-jocuri.html">Intră pe platforme</a>
-							</div>
+					<div class="grid gap-5 lg:grid-cols-3">
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Platforme</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Steam și Epic Games</h3>
+							<p class="mt-4 text-brand-muted">Compari rapid două platforme mari, vezi titluri populare și prețuri orientative pentru jocuri căutate.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"><strong>Practic pentru alegerea magazinului</strong><a class="inline-flex items-center gap-2 font-bold" href="platforme-jocuri.html"><span>Intră pe platforme</span><span aria-hidden="true">→</span></a></div>
 						</article>
-
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Selecție</span>
-							<h3>Jocuri recomandate</h3>
-							<p>O listă concentrată cu titluri cunoscute, din genuri diferite, ca să găsești mai repede ceva potrivit stilului tău.</p>
-							<div class="panel-footer">
-								<strong>RPG, curse, co-op și competitiv</strong>
-								<a class="link-line" href="jocuri.html">Deschide Jocuri</a>
-							</div>
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Selecție</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Jocuri recomandate</h3>
+							<p class="mt-4 text-brand-muted">O listă concentrată cu titluri cunoscute, din genuri diferite, ca să găsești mai repede ceva potrivit stilului tău.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"><strong>RPG, curse, co-op și competitiv</strong><a class="inline-flex items-center gap-2 font-bold" href="jocuri.html"><span>Deschide Jocuri</span><span aria-hidden="true">→</span></a></div>
 						</article>
-
-						<article class="panel" data-reveal>
-							<span class="eyebrow">Comunitate</span>
-							<h3>Review-uri și impresii</h3>
-							<p>Pagina dedicată comunității include un slider cu păreri de la jucători, util pentru o imagine mai personală asupra jocurilor.</p>
-							<div class="panel-footer">
-								<strong>Mai puțin marketing, mai multă opinie</strong>
-								<a class="link-line" href="comunitate.html">Intră în Comunitate</a>
-							</div>
+						<article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal>
+							<span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Comunitate</span>
+							<h3 class="mt-3 font-display text-[1.3rem] leading-[1.15]">Review-uri și impresii</h3>
+							<p class="mt-4 text-brand-muted">Pagina dedicată comunității include un slider cu păreri de la jucători, util pentru o imagine mai personală asupra jocurilor.</p>
+							<div class="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"><strong>Mai puțin marketing, mai multă opinie</strong><a class="inline-flex items-center gap-2 font-bold" href="comunitate.html"><span>Intră în Comunitate</span><span aria-hidden="true">→</span></a></div>
 						</article>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="site-footer">
-			<div class="shell footer-grid">
-				<div class="footer-copy">
-					<strong class="brand-mark">BATTLEARENA</strong>
-					<p>Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p>
+		<footer class="relative z-10 border-t border-cyan-200/10 bg-[#03060e]/60 py-10">
+			<div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 lg:flex-row lg:items-center lg:justify-between lg:px-6">
+				<div class="grid gap-1">
+					<strong class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</strong>
+					<p class="text-brand-muted">Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p>
 				</div>
-				<nav class="footer-links" aria-label="Navigație secundară">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
+				<nav class="flex flex-wrap gap-4 text-brand-muted" aria-label="Navigație secundară">
+					<a class="transition hover:text-brand-text" href="index.html">Jocuri Video</a>
+					<a class="transition hover:text-brand-text" href="event.html">Event</a>
+					<a class="transition hover:text-brand-text" href="ghid.html">Ghid</a>
+					<a class="transition hover:text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a>
+					<a class="transition hover:text-brand-text" href="jocuri.html">Jocuri</a>
+					<a class="transition hover:text-brand-text" href="comunitate.html">Comunitate</a>
 				</nav>
 			</div>
 		</footer>

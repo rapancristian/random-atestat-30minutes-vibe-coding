@@ -1,0 +1,27 @@
+{
+  "name": "random-atestat-30minutes-vibe-coding",
+  "version": "1.0.0",
+  "description": "��A\u0000t\u0000e\u0000s\u0000t\u0000a\u0000t\u0000 \u00002\u00000\u00002\u00006\u0000 \u0000B\u0000a\u0000d\u0000e\u0000a\u0000n\u0000u\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./tailwind-input.css -o ./tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapancristian/random-atestat-30minutes-vibe-coding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rapancristian/random-atestat-30minutes-vibe-coding/issues"
+  },
+  "homepage": "https://github.com/rapancristian/random-atestat-30minutes-vibe-coding#readme",
+  "devDependencies": {
+    "@fontsource/orbitron": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

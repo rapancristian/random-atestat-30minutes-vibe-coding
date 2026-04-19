@@ -5,112 +5,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BattleArena | Noaptea de Speedrun</title>
 		<link rel="icon" href="favicon.svg" type="image/svg+xml">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="tailwind.css">
 		<link rel="stylesheet" href="style.css">
 		<script defer src="script.js"></script>
 	</head>
-	<body class="page-event-speedrun">
-		<header class="site-header">
-			<div class="shell">
-				<a class="brand" href="index.html">
-					<span class="brand-mark">BATTLEARENA</span>
-					<span class="brand-tag">portal despre jocuri video</span>
-				</a>
-				<nav class="site-nav" aria-label="Navigație principală">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
+	<body class="min-h-screen font-body text-brand-text leading-[1.7] [background:radial-gradient(circle_at_top_left,rgba(64,207,255,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,111,216,0.16),transparent_24%),radial-gradient(circle_at_bottom_center,rgba(118,230,255,0.10),transparent_30%),linear-gradient(160deg,#02040a_0%,#040813_42%,#070d1c_100%)]">
+		<div aria-hidden="true" class="pointer-events-none fixed inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] [background-size:40px_40px] [mask-image:radial-gradient(circle_at_center,#000_40%,transparent_92%)]"></div>
+		<header class="site-header sticky top-0 z-50 border-b border-cyan-200/10 bg-[#040813]/75 backdrop-blur-xl">
+			<div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-6">
+				<a class="grid gap-1" href="index.html"><span class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</span><span class="text-[0.72rem] uppercase tracking-[0.16em] text-brand-muted">portal despre jocuri video</span></a>
+				<nav class="flex w-full gap-3 overflow-x-auto pb-1 lg:w-auto lg:flex-wrap lg:justify-end lg:overflow-visible lg:pb-0" aria-label="Navigație principală">
+					<a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="index.html">Jocuri Video</a><a class="whitespace-nowrap rounded-full border border-cyan-200/20 bg-white/5 px-4 py-3 text-[0.95rem] text-brand-text" href="event.html">Event</a><a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="ghid.html">Ghid</a><a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a><a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="jocuri.html">Jocuri</a><a class="whitespace-nowrap rounded-full border border-transparent px-4 py-3 text-[0.95rem] text-brand-muted transition hover:border-cyan-200/20 hover:bg-white/5 hover:text-brand-text" href="comunitate.html">Comunitate</a>
 				</nav>
 			</div>
 		</header>
-
-		<main>
-			<section class="page-banner banner-events">
-				<div class="shell banner-copy">
-					<span class="eyebrow">Detalii event</span>
-					<h1>Noaptea de Speedrun</h1>
-					<p>16 mai 2026, format hibrid. O seară dedicată rutelor rapide, comentariului live și duelurilor contra cronometru.</p>
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="shell content-stack">
-					<a class="back-link" href="event.html">Înapoi la lista de evenimente</a>
-
-					<div class="detail-grid">
-						<article class="panel detail-content" data-reveal>
-							<span class="eyebrow">Despre eveniment</span>
-							<h2>Viteză, rută optimă și spectacol live</h2>
-							<p>Noaptea de Speedrun este construită pentru jucătorii care iubesc traseele optimizate, tehnicile descoperite în timp și energia unui public care urmărește fiecare secundă economisită.</p>
-							<p>Formatul hibrid permite participare la fața locului și urmărire prin stream. În plus, există provocări speciale în care creatorii încearcă să improvizeze pe jocuri pe care nu le stăpânesc complet.</p>
-							<div class="highlight-card">
-								<h3>Ce merită urmărit</h3>
-								<p>Segmentul „blind speedrun”, unde participanții trebuie să-și adapteze rapid strategia și să găsească soluții pe loc.</p>
-							</div>
-						</article>
-
-						<aside class="panel detail-meta" data-reveal>
-							<span class="eyebrow">Informații rapide</span>
-							<h2>Fișă scurtă</h2>
-							<ul class="meta-list">
-								<li>
-									<strong>Data</strong>
-									16 mai 2026
-								</li>
-								<li>
-									<strong>Locația</strong>
-									Cluj + livestream
-								</li>
-								<li>
-									<strong>Format</strong>
-									Hibrid
-								</li>
-								<li>
-									<strong>Acces</strong>
-									40 lei la locație / stream gratuit
-								</li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="shell">
-					<article class="panel panel-stack" data-reveal>
-						<span class="eyebrow">Program</span>
-						<h2>Cum arată seara</h2>
-						<ul class="schedule-list">
-							<li><strong>17:00 - Warm-up și prezentarea runnerilor</strong> Participanții își prezintă jocurile și categoriile preferate.</li>
-							<li><strong>18:30 - Primele runde oficiale</strong> Încep cursele cronometrate și comparațiile de rută.</li>
-							<li><strong>21:00 - Provocare specială</strong> Segmentul de improvizație pe jocuri necunoscute sau jucate rar.</li>
-							<li><strong>23:00 - Final și recapitulare</strong> Cele mai bune momente sunt comentate și analizate împreună cu publicul.</li>
-						</ul>
-					</article>
-				</div>
-			</section>
+		<main class="relative z-10">
+			<section class="relative overflow-hidden px-4 py-18 lg:px-6 lg:py-20"><div aria-hidden="true" class="absolute inset-0 opacity-95"><div class="absolute left-[16%] top-[28%] h-56 w-56 rounded-full bg-[rgba(255,209,102,0.18)] blur-3xl"></div><div class="absolute right-[16%] top-[18%] h-64 w-64 rounded-full bg-[rgba(118,230,255,0.18)] blur-3xl"></div></div><div class="relative z-10 mx-auto grid max-w-[1180px] gap-4"><span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Detalii event</span><h1 class="max-w-[820px] font-display text-[clamp(2.3rem,12vw,5.25rem)] leading-none">Noaptea de Speedrun</h1><p class="max-w-[820px] text-brand-muted">16 mai 2026, format hibrid. O seară dedicată rutelor rapide, comentariului live și duelurilor contra cronometru.</p></div></section>
+			<section class="px-4 py-16 lg:px-6 lg:py-20"><div class="mx-auto grid max-w-[1180px] gap-5"><a class="inline-flex items-center gap-2 font-bold" href="event.html"><span aria-hidden="true">←</span><span>Înapoi la lista de evenimente</span></a><div class="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]"><article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal><div class="grid gap-4"><span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Despre eveniment</span><h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Viteză, rută optimă și spectacol live</h2><p class="text-brand-muted">Noaptea de Speedrun este construită pentru jucătorii care iubesc traseele optimizate, tehnicile descoperite în timp și energia unui public care urmărește fiecare secundă economisită.</p><p class="text-brand-muted">Formatul hibrid permite participare la fața locului și urmărire prin stream. În plus, există provocări speciale în care creatorii încearcă să improvizeze pe jocuri pe care nu le stăpânesc complet.</p><div class="grid gap-3"><h3 class="font-display text-[1.3rem] leading-[1.15]">Ce merită urmărit</h3><p class="text-brand-muted">Segmentul „blind speedrun”, unde participanții trebuie să-și adapteze rapid strategia și să găsească soluții pe loc.</p></div></div></article><aside class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal><div class="grid gap-4"><span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Informații rapide</span><h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Fișă scurtă</h2><ul class="grid gap-3"><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-accent">Data</strong>16 mai 2026</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-accent">Locația</strong>Cluj + livestream</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-accent">Format</strong>Hibrid</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4"><strong class="block text-[0.8rem] uppercase tracking-[0.12em] text-brand-accent">Acces</strong>40 lei la locație / stream gratuit</li></ul></div></aside></div></div></section>
+			<section class="px-4 py-16 lg:px-6 lg:py-20"><div class="mx-auto max-w-[1180px]"><article class="panel rounded-[28px] border border-brand-border bg-[linear-gradient(180deg,rgba(12,20,43,0.96),rgba(7,12,26,0.96))] p-6 shadow-panel" data-reveal><div class="grid gap-4"><span class="inline-block text-[0.76rem] font-bold uppercase tracking-[0.18em] text-brand-accent">Program</span><h2 class="font-display text-[clamp(1.85rem,4.4vw,2.8rem)] leading-[1.1]">Cum arată seara</h2><ul class="grid gap-4"><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4 text-brand-muted"><strong class="block text-brand-text">17:00 - Warm-up și prezentarea runnerilor</strong>Participanții își prezintă jocurile și categoriile preferate.</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4 text-brand-muted"><strong class="block text-brand-text">18:30 - Primele runde oficiale</strong>Încep cursele cronometrate și comparațiile de rută.</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4 text-brand-muted"><strong class="block text-brand-text">21:00 - Provocare specială</strong>Segmentul de improvizație pe jocuri necunoscute sau jucate rar.</li><li class="rounded-[18px] border border-white/10 bg-white/5 px-5 py-4 text-brand-muted"><strong class="block text-brand-text">23:00 - Final și recapitulare</strong>Cele mai bune momente sunt comentate și analizate împreună cu publicul.</li></ul></div></article></div></section>
 		</main>
-
-		<footer class="site-footer">
-			<div class="shell footer-grid">
-				<div class="footer-copy">
-					<strong class="brand-mark">BATTLEARENA</strong>
-					<p>Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p>
-				</div>
-				<nav class="footer-links" aria-label="Navigație secundară">
-					<a href="index.html">Jocuri Video</a>
-					<a href="event.html">Event</a>
-					<a href="ghid.html">Ghid</a>
-					<a href="platforme-jocuri.html">Platforme Jocuri</a>
-					<a href="jocuri.html">Jocuri</a>
-					<a href="comunitate.html">Comunitate</a>
-				</nav>
-			</div>
-		</footer>
+		<footer class="relative z-10 border-t border-cyan-200/10 bg-[#03060e]/60 py-10"><div class="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 lg:flex-row lg:items-center lg:justify-between lg:px-6"><div class="grid gap-1"><strong class="font-display text-[1.22rem] font-extrabold tracking-[0.18em]">BATTLEARENA</strong><p class="text-brand-muted">Portal despre jocuri video cu lansări, ghiduri, platforme, jocuri și comunitate.</p></div><nav class="flex flex-wrap gap-4 text-brand-muted" aria-label="Navigație secundară"><a class="transition hover:text-brand-text" href="index.html">Jocuri Video</a><a class="transition hover:text-brand-text" href="event.html">Event</a><a class="transition hover:text-brand-text" href="ghid.html">Ghid</a><a class="transition hover:text-brand-text" href="platforme-jocuri.html">Platforme Jocuri</a><a class="transition hover:text-brand-text" href="jocuri.html">Jocuri</a><a class="transition hover:text-brand-text" href="comunitate.html">Comunitate</a></nav></div></footer>
 	</body>
 </html>

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@source "./*.html";
+@source "./script.js";
+
+@theme {
+	--color-brand-text: #f5f7ff;
+	--color-brand-muted: #9fb2d4;
+	--color-brand-accent: #76e6ff;
+	--color-brand-accent-strong: #40cfff;
+	--color-brand-accent-alt: #ff6fd8;
+	--color-brand-accent-warm: #ffd166;
+	--color-brand-border: rgba(121, 232, 255, 0.18);
+	--font-display: "Orbitron", sans-serif;
+	--font-body: "Space Grotesk", sans-serif;
+	--shadow-panel: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
