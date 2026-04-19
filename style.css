@@ -319,7 +319,6 @@ main {
 .detail-content p,
 .detail-meta p,
 .banner-copy p,
-.info-item p,
 .guide-lead p,
 .price-item p,
 .footer-copy p {
@@ -396,10 +395,6 @@ h3 {
 
 .card-grid.three-up {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.card-grid.two-up {
-	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .panel {
@@ -520,7 +515,6 @@ h3 {
 	gap: 1rem;
 }
 
-.info-item,
 .timeline-item,
 .schedule-list li,
 .price-item,
@@ -930,7 +924,6 @@ body.js-ready [data-slide].is-active {
 
 	.hero-stats,
 	.card-grid.three-up,
-	.card-grid.two-up,
 	.examples-grid {
 		grid-template-columns: 1fr;
 	}
